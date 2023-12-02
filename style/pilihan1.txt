@@ -1,0 +1,80 @@
+body{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('/image/bglogin.png'); /* Ganti 'nama-file-gambar-anda.jpg' dengan path gambar Anda */
+    background-size: cover;
+    background-repeat: no-repeat; /* Mencegah pengulangan gambar */
+    background-position: center; /* Menyusun gambar secara horizontal dan vertikal di tengah latar belakang */
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 450px;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 40px;
+    margin-right: 100px; 
+    padding: 30px;
+}
+.welcome{
+    height: 50px;
+    padding-left: 30px;
+    color: black;
+    font-size: 24px;
+    margin-bottom: -55px;
+}
+.rumahsakit{
+    color: #779341;
+    font-weight: 600;
+}
+.judul{
+    height: 80px;
+    padding-left: 30px;
+    font-size: 50px;
+    margin-bottom: 55px;
+}
+.form{
+    height: 300px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.email, .pass{
+    height: 40px;
+    border-radius: 10px;
+    width: 100%;
+    border-style: none;
+    font-size: 20px;
+    padding-left: 20px;
+    border: 1px solid gray;
+}
+.email:hover{
+    border-color: #779341;
+}
+.register{
+    font-size: 14px;
+}
+.button1 {
+  background-color: #779341;
+  border-radius: 8px;
+  border-style: none;
+  width: 180px;
+  height: 50px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 16px;
+  text-align: center;
+  margin-left: 235px;
+}
+
+.button1:hover,
+.button1:focus {
+  background-color: #6a8631;
+}
+

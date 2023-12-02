@@ -1,0 +1,449 @@
+*,html,body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.navigasi {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #0F4C75;
+    z-index: 100;
+}
+
+
+.wrapper {
+    display: flex;
+    font-size: 16px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    width: 100%;
+    height: 40px;
+}
+
+.nama {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-size: 1.5em;
+    padding: 15px;
+}
+
+.nama img{
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.firstname {
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.lastname {
+    color: #BBE1FA;
+    font-weight: 500;
+    padding-left: 4px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right; 
+    padding: 30px;
+}
+
+.menu>li {
+    list-style-type: none;
+    padding: 10px 15px;
+}
+
+.menu>li>a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.active {
+    background-color: #609bc3;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.menu>li>a:hover{
+    color: #BBE1FA;
+    transition: all .3s ease-in-out;
+}
+
+.active:hover {
+    color: white !important;
+}
+
+body {
+    padding-top: 60px;
+    background-image: url(../image/bghomepage.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    
+}
+
+.konten{
+    width: 100%;
+    height: 720px;
+}
+
+.kontenkiri{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 450px;
+    float: left;
+    margin: 90px 0;
+}
+
+.signup{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    background-color: #35A29F;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+    border: none;
+}
+
+.signup:hover {
+    background-color: #267c78;
+}
+
+.kontenkanan {
+    margin: 100px 0;
+    width: 50%;
+    height: 400px;
+    float: left;
+}
+
+.sambutan{
+    width: 50%;
+    height: 250px;
+    text-align: left;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.sambutan p{
+    font-family: 'Poppins', sans-serif;
+}
+
+.kontenkanan img{
+    height: 400px;
+    width: auto;
+}
+
+.news{
+    display: flex;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    background-color: #35A29F;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+    border: none;
+    float: right;
+}
+
+.news:hover{
+    background-color: #267c78;
+}
+
+
+.kotak-berita {
+    background-color: #0F4C75;
+    width: 100%;
+    height: 650px;
+}
+
+.bungkus-berita {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box1 {
+    margin: 25px 95px;
+    border-radius: 10px;
+    width: 300px;
+    height: 500px;
+    background-color: #fff;
+}
+
+.box2 {
+    border-radius: 10px;
+    width: 300px;
+    height: 180px;
+    background-color: aqua;
+}
+
+.box2 a img {
+    border-radius: 10px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.box3 {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 250px;
+    background-color: rgba(255, 255, 255, 0.716);
+}
+
+.box3 h4,p {
+    font-size: 14px;
+    margin: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.box4 {
+    border-radius: 10px;
+    width: 300px;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.716)
+}
+
+.readmore {
+    font-family: 'Poppins', sans-serif;
+    margin: 15px;
+    margin-bottom: 0;
+    margin-top: 0;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    background-color: #35A29F;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.readmore:hover {
+    background-color: #267c78;
+}
+.container-layanan {
+    width: 1000px;
+    height: 700px;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+}
+
+.card-layanan {
+    padding: 80px 0;
+    background-color: rgba(255, 255, 255, 0.677);
+    margin: 20px;
+    flex: 1;
+}
+
+.card-layanan .header-layanan {
+    height: 200px;
+}
+
+.card-layanan .header-layanan img {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-layanan .konten-layanan {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.konten-layanan h3 {
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.konten-layanan p{
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    font-size: small;
+}
+
+.footer-konten{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(59, 59, 59);
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 25px;
+    color: #fff;
+}
+
+.footer-konten h3{
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-konten p{
+    margin-top: auto;
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 25px;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sosmed{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 2rem 0;
+}
+
+.sosmed li{
+    margin: 0 10px;
+}
+
+.sosmed a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.sosmed a ion-icon{
+    font-size: 20px;
+    transition: color .4s ease;
+}
+
+.sosmed a:hover ion-icon{
+    color: #267c78;
+}
+
+.footer-bottom{
+    background-color: black;
+    width: 100%;
+    height: 55px;
+    padding: 3px 0;
+    text-align: center;
+}
+
+.footer-bottom p{
+    font-size: 13px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: 4;
+    font-weight: 200;
+    color: rgb(68, 68, 68);
+}
+.title h1{
+    padding-top: 40px;
+    text-align: center;
+}
+.menu-berita h2{
+    color: #fff;
+    text-align: left;
+    padding-top: 25px;
+    padding-left: 15px;
+}
+.background{
+    background-image: url(../image/blur-hospital.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.container-news{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.588);
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.gambarberita img{
+    max-width: 92%;
+    height: auto;
+    margin-left: 40px;
+    border-radius: 8px;
+}
+
+.isiberita{
+    padding: 30px;
+}
+
+.container-news h2{
+    margin: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.isiberita p{
+    font-size: medium;
+    text-align: justify;
+}
+.isiberita button{
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    background-color: #35A29F;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+    border: none;
+}
+.isiberita button:hover{
+    background-color: #267c78;
+}
+.delete{
+    margin-left: 638px;
+}
+.update{
+    margin-left: 10px;
+}

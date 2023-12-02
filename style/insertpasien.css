@@ -1,0 +1,421 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+
+
+.container{
+  display: flex;
+  flex-direction: column;
+  height: 1000px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.content{
+  opacity: 0.95;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  
+}
+.sidebar{
+  width: 15%;
+  background: #1f1d1d;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  height: 100%;
+  padding-bottom: 120px;
+}
+.top-sidebar{
+  height: 15%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-sidebar img{
+    width: 45px;
+    height: 45px;
+    margin-bottom: 3px;
+    border-radius: 100%;
+}
+.bottom-sidebar{
+  padding-top: 10px;
+  height: 85%;
+  width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    gap: 5px;
+}
+.isi_content{
+    width: 85%;
+    height: 100%;
+    background: radial-gradient(107.22% 43.3% at 51.09% 40.44%, #cbdaee25 0%, #f6e3eb30 47.58%, #d5deed28 93.12%);
+}
+.bottom-sidebar button{
+    appearance: none;
+    border: none;
+    width: 80%;
+    height: 50px;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 15px;
+    font-weight: 600;
+    color: black;
+    display: flex;
+    padding-left: 40px;
+    align-items: center;
+    gap: 10px;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+.bottom-sidebar button:hover {
+    background-color: #ededed ;
+    box-shadow: rgba(159, 159, 159, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.bottom-sidebar button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+button svg {
+    width: 20px; /* Set a fixed width for the SVG */
+    height: 20px; /* Set a fixed height for the SVG */
+    fill: #0D0D0D; /* Set the fill color for the SVG */
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+h1{
+    font-size: 27px;
+    font-weight: 600;
+    color: black;
+    padding-top: 30px;
+    padding-left: 35px;
+    padding-bottom: 30px;
+}
+
+.kotak-biodata{
+    width: 1400px;
+    margin-left: 35px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    padding-left: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.479);
+}
+.sub-judul{
+    font-size: 20px;
+    color: black;
+    text-align: left;
+    margin-right: 1250px;
+}
+
+
+td{
+    padding: 10px;
+    text-align: left;
+}
+.kolom1{
+  width: 25%; 
+}
+.kolom2{
+  width: 1%; 
+}
+.custom-select {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: rgba(189, 185, 185, 0.144);
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 24px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #272424 transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #272424 transparent;
+  top: 17px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: #0f0f0f;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: rgb(252, 249, 249);
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+[type="date"] {
+  background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+}
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+.tanggal{
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 3px 5px;
+  box-shadow: inset 0 3px 6px rgba(160, 160, 160, 0.1);
+  width: 200px;
+
+  height: 38px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.pesan {
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: rgb(37, 121, 238);
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+  font-size: 100%;
+  height: 37px;
+  line-height: 1.15;
+  margin: 12px 0 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all .2s,box-shadow .08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 110px;
+}
+
+.pesan:disabled {
+  cursor: default;
+}
+
+.pesan:focus {
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+.pesan:hover {
+  background-color: rgb(27, 90, 179);
+}
+
+.tabeldata{
+    margin-top: 50px;
+    width: 90%;
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+.table-header{
+    background-color: #e5f0fd;
+    height: 45px;
+    font-size: 15px;
+    text-align: left;
+    
+}
+.tabeldata th, .tabeldata td {
+    width: 160px;
+    padding-left: 28px;
+}
+.tabeldata td {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.148);
+}
+td{
+    padding: 10px;
+    text-align: left;
+}
+.kolom1{
+        width: 25%; 
+}
+.kolom2{
+        width: 1%; 
+}
+.input-text{
+    height: 32px;
+    border-radius: 5px;
+    border: 1px solid #c2c2c2;
+    background-color: rgba(252, 249, 249, 0.388);
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+form {
+    width: 1000px;
+    margin-left: 37px;
+    padding: 20px;
+    padding-right: 50px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: rgba(235, 233, 233, 0.616);
+}
+label {
+    font-weight: bold;
+}
+input[type="text"],
+input[type="file"],
+input[type="email"],
+input[type="date"],
+input[type="password"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+.tambahberita {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.tambahberita:hover {
+    background-color: #0056b3;
+}
+
+.custom-select {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+ 
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+   border-radius: 5px;
+}
+
+.select-selected {
+  background-color: rgba(255, 255, 255, 0.884);
+  border-radius: 5px;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 24px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border-radius: 5px;
+  border: 6px solid transparent;
+  border-color: #272424 transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #272424 transparent;
+  top: 17px;
+  border-radius: 5px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: #0f0f0f;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: rgb(252, 249, 249);
+  top: 100%;
+  left: 0;
+  border-radius: 5px;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+  border-radius: 5px;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}

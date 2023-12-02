@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100%;
+    
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.content{
+    opacity: 0.95;
+    background: rgba(255, 255, 255, 0.7);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+
+}
+.sidebar{
+    width: 15%;
+    background: #1f1d1d;
+    display: flex;
+    color: white;
+    flex-direction: column;
+}
+
+
+
+.top-sidebar{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-sidebar img{
+    width: 45px;
+    height: 45px;
+    margin-bottom: 3px;
+    border-radius: 100%;
+}
+
+.bottom-sidebar{
+    padding-top: 10px;
+    height: 85%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    gap: 5px;
+}
+.isi_content{
+    width: 85%;
+    height: 100%;
+    background: radial-gradient(107.22% 43.3% at 51.09% 40.44%, #cbdaee25 0%, #f6e3eb30 47.58%, #d5deed28 93.12%);
+}
+.bottom-sidebar button{
+    appearance: none;
+    border: none;
+    width: 80%;
+    height: 50px;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 15px;
+    font-weight: 600;
+    color: black;
+    display: flex;
+    padding-left: 40px;
+    align-items: center;
+    gap: 10px;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+.bottom-sidebar button:hover {
+    background-color: #ededed ;
+    box-shadow: rgba(159, 159, 159, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.bottom-sidebar button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+button svg {
+    width: 20px; /* Set a fixed width for the SVG */
+    height: 20px; /* Set a fixed height for the SVG */
+    fill: #0D0D0D; /* Set the fill color for the SVG */
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+h1{
+    font-size: 27px;
+    font-weight: 600;
+    color: black;
+    padding-top: 30px;
+    padding-left: 35px;
+    padding-bottom: 30px;
+}
+
+.kotak-biodata{
+    width: 1400px;
+    margin-left: 35px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.479);
+}
+.sub-judul{
+    font-size: 20px;
+    color: black;
+    text-align: left;
+    width: 1330px;
+    margin: 0px;
+    padding: 0px;
+}
+.sub-judul span{
+    padding-left: 1147px;
+    background-color: #FFFFFF;
+}
+span button{
+    background-color: #007bff;
+    color: #fff;
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 400;
+}
+span button:hover{
+    background-color: #0069d9;
+}
+.kotak-biodata-atas{
+    width: 97%;
+
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.kotak-biodata-atas-kiri{
+    width: 16%;
+    height: 100%;
+    display: flex;
+
+    flex-direction: column;
+    gap: 10px;
+}
+.foto-profil{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.kotak-biodata-atas-kanan{
+    width: 84%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px #41404b58;
+}
+
+.tabel-biodata{
+    margin: 30px;
+    margin-top: 30px;
+    width: 60%;
+    color: black;
+    border-collapse: collapse;
+    box-sizing: border-box;
+}
+.tabelbio{
+    background-color: #FFFFFF;
+    color: black;
+    text-align: left;
+    
+}
+
+.kotak-biodata-bawah{
+    width: 97%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.kotak-data-bawah-kiri{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px #41404b58;
+}
+
+.kotak-data-bawah-kiri h3{
+    padding-right: 420px;
+    padding-top: 20px;
+}
+.view-all-keluhan{
+    color: rgb(24, 113, 154);
+    text-decoration: underline;
+    padding-left: 533px;
+}
+
+
+.kotak-data-bawah-kanan{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px #41404b58;
+}
+
+.kotak-data-bawah-kanan h3{
+    padding-right: 420px;
+    padding-top: 20px;
+}
+
+.tabeldata{
+    margin-top: 10px;
+    width: 90%;
+    
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+.table-header{
+    background-color: #e5f0fd;
+    height: 45px;
+    font-size: 15px;
+    text-align: left;
+    
+}
+.tabeldata th, .tabeldata td {
+    width: 160px;
+    padding-left: 28px;
+}
+.tabeldata td {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.148);
+}
+td{
+    padding: 10px;
+    text-align: left;
+}
+.kolom1{
+        width: 25%; 
+}
+.kolom2{
+        width: 1%; 
+}
+.kotak-data-bawah{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding-top: 30px;
+    padding-left: 29px;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px #41404b58;
+}
+
+.tabeldata-dokter{
+    margin-top: 10px;
+    width: 98%;
+    
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+.tabeldata-dokter th, .tabeldata td {
+    width: 160px;
+    padding-left: 28px;
+}
+.tabeldata-dokter td {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.148);
+    padding-left: 29px;
+}
+.view-all-pasien{
+    color: rgb(24, 113, 154);
+    text-decoration: underline;
+    padding-left: 1210px;
+}
+.kotak-info{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding-top: 38px;
+    padding-left: 29px;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px #41404b58;
+}
+
+.jumlah{
+    text-align: center;
+    font-weight: 400;
+    color: #007bff;
+    padding-right: 28px;
+    font-size: 80px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}

@@ -1,0 +1,109 @@
+:root {
+    /*color*/
+    --primary : #2771CA;
+}
+body{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../image/nurse.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 40px;
+    margin-right: 110px; 
+    padding: 30px;
+}
+.welcome{
+    height: 50px;
+    padding-left: 30px;
+    color: black;
+    font-size: 24px;
+    margin-bottom: -55px;
+}
+.rumahsakit{
+    color: var(--primary);
+    font-weight: 600;
+}
+.judul{
+    height: 80px;
+    padding-left: 30px;
+    font-size: 50px;
+    margin-bottom: 90px;
+}
+.form{
+    height: 300px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.email, .pass{
+    height: 40px;
+    border-radius: 10px;
+    width: 100%;
+    border-style: none;
+    font-size: 20px;
+    padding-left: 20px;
+    border: 1px solid gray;
+}
+.email:focus,
+.pass:focus {
+  border-color: #779341; /* Change to the desired border color */
+}
+.email:hover{
+    border-color: var(--primary);
+}
+.register{
+    font-size: 14px;
+}
+.button1 {
+  background-color: var(--primary);
+  border-radius: 8px;
+  border-style: none;
+  width: 180px;
+  height: 50px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 16px;
+  text-align: center;
+  margin-left: 183px;
+}
+
+.button1:hover,
+.button1:focus {
+  background-color: #2768b7 ;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+a:visited {
+    color: var(--primary); 
+}
+
+.password-toggle {
+  position: relative;
+}
+
+
+.toggle-icon {
+  position: absolute;
+  top: 8px;
+  right: -12px;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+}
